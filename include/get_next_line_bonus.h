@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: markik <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/10 01:01:26 by markik            #+#    #+#             */
-/*   Updated: 2022/12/10 01:01:35 by markik           ###   ########.fr       */
+/*   Created: 2022/12/10 01:02:04 by markik            #+#    #+#             */
+/*   Updated: 2022/12/10 01:02:19 by markik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -20,6 +20,9 @@
 # include <stdlib.h>
 # include <fcntl.h>
 # include <limits.h>
+# ifndef OPEN_MAX
+#  define OPEN_MAX 10240
+# endif
 
 size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char *dest, char *src);
